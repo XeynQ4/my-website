@@ -2,6 +2,7 @@ import React from 'react';
 import './nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     function changeNav() {
@@ -44,15 +45,15 @@ function Nav() {
             <button className="nav-button" onClick={changeNav}>
                 <FontAwesomeIcon icon={faBars} />
             </button>
-            <a className="nav-item" href="/">
+            <Link className="nav-item" to="/">
                 Home
-            </a>
-            <a className="nav-item" href="/">
-                About Us
-            </a>
-            <a className="nav-item" href="/">
+            </Link>
+            <Link className="nav-item" to="/serpinski-triangle">
+                Serpenski Triangle
+            </Link>
+            <Link className="nav-item" to="/">
                 Contact
-            </a>
+            </Link>
         </nav>
     );
 }
