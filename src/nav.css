@@ -1,5 +1,5 @@
 #nav {
-    position: sticky;
+    position: fixed;
     left: 0;
     top: 0;
     display: flex;
@@ -34,11 +34,11 @@
 
 @media only screen and (min-width: 768px) {
     #nav {
-        left: None;
         flex-direction: row;
         height: auto;
         width: 100vw;
         justify-content: center;
+        transition: 0s;
     }
 
     .nav-item {
