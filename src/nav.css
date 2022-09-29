@@ -1,5 +1,6 @@
 #nav {
     position: sticky;
+    left: 0;
     display: flex;
     flex-direction: column;
     background-color: #46a2f2;
@@ -32,6 +33,8 @@
 
 @media only screen and (min-width: 768px) {
     #nav {
+        left: None;
+        top: 0;
         flex-direction: row;
         height: auto;
         width: 100vw;
