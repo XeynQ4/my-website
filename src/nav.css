@@ -9,7 +9,6 @@
     height: 100vh;
     overflow: hidden;
     transition: 0.5s;
-    -webkit-backface-visibility: hidden;
 }
 
 #spacer {
