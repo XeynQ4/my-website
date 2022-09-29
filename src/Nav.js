@@ -61,8 +61,8 @@ function Nav() {
     }
 
     return (
-        <>
-            <nav id="nav">
+        <nav id="nav">
+            <div>
                 <button className="nav-button" onClick={changeNav}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
@@ -79,9 +79,9 @@ function Nav() {
                 <Link className="nav-item" onClick={closeNav} to="/">
                     Contact
                 </Link>
-            </nav>
+            </div>
             <div id="spacer"></div>
-        </>
+        </nav>
     );
 }
 
