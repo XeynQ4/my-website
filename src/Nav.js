@@ -5,17 +5,20 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 function Nav() {
+    const mobileWidthRetracted = '60px';
+    const mobileWidthExpanded = '80%';
+
     function changeNav() {
         console.log('clicked');
         let nav = document.getElementById('nav');
         let items = document.getElementsByClassName('nav-item');
-        if (nav.style.width === '40%') {
+        if (nav.style.width === mobileWidthExpanded) {
             for (let item of items) {
                 item.style.visibility = 'hidden';
             }
-            nav.style.width = '60px';
+            nav.style.width = mobileWidthRetracted;
         } else {
-            nav.style.width = '40%';
+            nav.style.width = mobileWidthExpanded;
             for (let item of items) {
                 item.style.visibility = 'visible';
             }
@@ -36,7 +39,7 @@ function Nav() {
             for (let item of items) {
                 item.style.visibility = 'hidden';
             }
-            nav.style.width = '60px';
+            nav.style.width = mobileWidthRetracted;
         }
     }
 
