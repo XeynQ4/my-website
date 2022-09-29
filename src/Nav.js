@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
     const mobileWidthRetracted = '60px';
-    const mobileWidthExpanded = '80%';
+    const mobileWidthExpanded = '100%';
 
     function changeNav() {
         console.log('clicked');
