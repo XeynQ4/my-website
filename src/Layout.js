@@ -5,10 +5,10 @@ import './Layout.css';
 
 const Layout = () => {
     return (
-        <>
+        <div id="body">
             <Nav />
             <Outlet />
-        </>
+        </div>
     );
 };
 

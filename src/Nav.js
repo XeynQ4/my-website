@@ -61,24 +61,27 @@ function Nav() {
     }
 
     return (
-        <nav id="nav">
-            <button className="nav-button" onClick={changeNav}>
-                <FontAwesomeIcon icon={faBars} />
-            </button>
-            <Link className="nav-item" onClick={closeNav} to="/">
-                Home
-            </Link>
-            <Link
-                className="nav-item"
-                onClick={closeNav}
-                to="/serpinski-triangle"
-            >
-                Serpenski Triangle
-            </Link>
-            <Link className="nav-item" onClick={closeNav} to="/">
-                Contact
-            </Link>
-        </nav>
+        <>
+            <nav id="nav">
+                <button className="nav-button" onClick={changeNav}>
+                    <FontAwesomeIcon icon={faBars} />
+                </button>
+                <Link className="nav-item" onClick={closeNav} to="/">
+                    Home
+                </Link>
+                <Link
+                    className="nav-item"
+                    onClick={closeNav}
+                    to="/serpinski-triangle"
+                >
+                    Serpenski Triangle
+                </Link>
+                <Link className="nav-item" onClick={closeNav} to="/">
+                    Contact
+                </Link>
+            </nav>
+            <div id="spacer"></div>
+        </>
     );
 }
 
