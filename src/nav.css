@@ -1,4 +1,5 @@
 #nav {
+    position: sticky;
     display: flex;
     flex-direction: column;
     background-color: #46a2f2;
