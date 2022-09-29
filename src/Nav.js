@@ -7,21 +7,37 @@ import { Link } from 'react-router-dom';
 function Nav() {
     const mobileWidthRetracted = '60px';
     const mobileWidthExpanded = '100%';
+    let isExpanded = false;
+    let isMobile = true;
 
     function changeNav() {
         console.log('clicked');
         let nav = document.getElementById('nav');
         let items = document.getElementsByClassName('nav-item');
-        if (nav.style.width === mobileWidthExpanded) {
+        if (isExpanded && isMobile) {
             for (let item of items) {
                 item.style.visibility = 'hidden';
             }
             nav.style.width = mobileWidthRetracted;
+            isExpanded = false;
         } else {
             nav.style.width = mobileWidthExpanded;
             for (let item of items) {
                 item.style.visibility = 'visible';
             }
+            isExpanded = true;
+        }
+    }
+
+    function closeNav() {
+        let nav = document.getElementById('nav');
+        let items = document.getElementsByClassName('nav-item');
+        if (isExpanded && isMobile) {
+            for (let item of items) {
+                item.style.visibility = 'hidden';
+            }
+            nav.style.width = mobileWidthRetracted;
+            isExpanded = false;
         }
     }
 
@@ -35,11 +51,13 @@ function Nav() {
             for (let item of items) {
                 item.style.visibility = 'visible';
             }
+            isMobile = false;
         } else {
             for (let item of items) {
                 item.style.visibility = 'hidden';
             }
             nav.style.width = mobileWidthRetracted;
+            isMobile = true;
         }
     }
 
@@ -48,13 +66,17 @@ function Nav() {
             <button className="nav-button" onClick={changeNav}>
                 <FontAwesomeIcon icon={faBars} />
             </button>
-            <Link className="nav-item" to="/">
+            <Link className="nav-item" onClick={closeNav} to="/">
                 Home
             </Link>
-            <Link className="nav-item" to="/serpinski-triangle">
+            <Link
+                className="nav-item"
+                onClick={closeNav}
+                to="/serpinski-triangle"
+            >
                 Serpenski Triangle
             </Link>
-            <Link className="nav-item" to="/">
+            <Link className="nav-item" onClick={closeNav} to="/">
                 Contact
             </Link>
         </nav>
