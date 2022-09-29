@@ -1,9 +1,9 @@
 function sketch(p) {
-    const width = 700;
-    const height = 700;
+    const width = 1900;
+    const height = 1000;
     const iterCount = 100;
 
-    const radius = 300;
+    const radius = 450;
     const steps = 3;
     let anchors = [];
     let currentPoint;
