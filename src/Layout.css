@@ -8,12 +8,14 @@ button {
     border-radius: 0.5rem;
 }
 
-Nav {
-    float: left;
+#body {
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
-    Nav {
+    #body {
         float: none;
+        flex-direction: row;
     }
 }
