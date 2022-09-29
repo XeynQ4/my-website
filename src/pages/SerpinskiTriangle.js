@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactP5Wrapper } from 'react-p5-wrapper';
-import sketch from './sketch';
+import sketch from './p5/serpinskiRandomPoints';
 
 function SerpinskiTriangle() {
     return <ReactP5Wrapper sketch={sketch}></ReactP5Wrapper>;
