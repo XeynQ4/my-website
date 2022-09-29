@@ -11,6 +11,9 @@ button {
 #body {
     display: flex;
     flex-direction: row;
+}
+
+Nav {
     min-width: 60px;
 }
 
