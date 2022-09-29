@@ -13,8 +13,8 @@ button {
     flex-direction: row;
 }
 
-Nav > #spacer {
-    min-width: 60px;
+Nav {
+    flex-basis: 60px;
 }
 
 @media only screen and (min-width: 768px) {
