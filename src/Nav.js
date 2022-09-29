@@ -61,8 +61,8 @@ function Nav() {
     }
 
     return (
-        <nav id="nav">
-            <div>
+        <nav>
+            <div id="nav">
                 <button className="nav-button" onClick={changeNav}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
