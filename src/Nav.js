@@ -11,7 +11,6 @@ function Nav() {
     let isMobile = true;
 
     function changeNav() {
-        console.log('clicked');
         let nav = document.getElementById('nav');
         let items = document.getElementsByClassName('nav-item');
         if (isExpanded && isMobile) {
