@@ -1,17 +1,17 @@
 function sketch(p) {
-    const width = 700;
-    const height = 700;
+    let w = p.windowWidth;
+    let h = p.windowHeight;
     const iterCount = 100;
 
-    const radius = 300;
+    let radius = w < h ? w / 2 - 20 : h / 2 - 20;
     const steps = 3;
     let anchors = [];
     let currentPoint;
 
     p.setup = function () {
-        p.createCanvas(width, height);
+        p.createCanvas(w, h);
 
-        p.translate(width / 2, height / 2);
+        p.translate(w / 2, h / 2);
         // circle(0, 0, radius);
 
         const step = p.TWO_PI / steps;
@@ -38,7 +38,7 @@ function sketch(p) {
     };
 
     p.draw = function () {
-        p.translate(width / 2, height / 2);
+        p.translate(w / 2, h / 2);
 
         // Runs the code iterCount times per draw loop
         for (let j = 0; j < iterCount; j++) {
@@ -64,6 +64,13 @@ function sketch(p) {
             currentPoint = nextPoint;
             p.point(nextX, nextY);
         }
+    };
+
+    p.windowResized = function () {
+        w = p.windowWidth;
+        h = p.windowHeight;
+        radius = w / 2 - 20 ? w <= h : h / 2 - 20;
+        p.resizeCanvas(w, h);
     };
 }
 
