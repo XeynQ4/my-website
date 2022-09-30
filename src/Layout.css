@@ -19,7 +19,6 @@ Nav {
 
 @media only screen and (min-width: 768px) {
     #body {
-        float: none;
         flex-direction: column;
     }
 }
