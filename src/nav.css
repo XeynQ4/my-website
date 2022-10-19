@@ -64,5 +64,6 @@
 
     .nav-button {
         visibility: hidden;
+        width: 0;
     }
 }
