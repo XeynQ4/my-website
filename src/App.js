@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './pages/Home';
 import SerpinskiTriangle from './pages/SerpinskiTriangle';
+import Aviation from './pages/Aviation';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                         path="serpinski-triangle"
                         element={<SerpinskiTriangle />}
                     />
+                    <Route path="aviation" element={<Aviation />} />
                 </Route>
             </Routes>
         </BrowserRouter>

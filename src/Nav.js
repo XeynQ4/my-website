@@ -76,8 +76,8 @@ function Nav() {
                 >
                     Serpinski Triangle
                 </Link>
-                <Link className="nav-item" onClick={closeNav} to="/">
-                    Contact
+                <Link className="nav-item" onClick={closeNav} to="/aviation">
+                    Aviation
                 </Link>
             </div>
             <div id="spacer"></div>

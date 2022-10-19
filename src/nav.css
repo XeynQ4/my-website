@@ -30,6 +30,12 @@
     padding: 1.5rem 2rem;
     visibility: hidden;
     white-space: nowrap;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: inherit;
 }
 
 .nav-item:hover,

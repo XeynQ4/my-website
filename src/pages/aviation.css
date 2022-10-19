@@ -1,0 +1,28 @@
+.aviation {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.aircraft {
+    background: #46a2f2;
+    padding: 2.5rem;
+    border-radius: 3rem;
+}
+
+.aircraft > h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.aircraft > ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.aircraft li {
+    padding-top: 0.5rem;
+}
