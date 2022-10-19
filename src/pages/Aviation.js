@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './aviation.css';
 import b737ngQrh from '../files/b737ng-qrh.pdf';
 import b737ngChecklist from '../files/b737ng-checklist.pdf';
+import { useEffect } from 'react';
 
 async function redirectFlightPlan() {
     try {
@@ -32,6 +33,13 @@ async function redirectFlightPlan() {
 function Aviation() {
     const [simbriefTextbox, setSimbriefTextbox] = useState('');
 
+    useEffect(() => {
+        const tempSimbriefTextbox = localStorage.getItem('simbriefTextbox');
+        if (tempSimbriefTextbox) {
+            setSimbriefTextbox(tempSimbriefTextbox);
+        }
+    }, []);
+
     return (
         <div className="aviation">
             <div className="card flight-plan">
@@ -42,11 +50,14 @@ function Aviation() {
                             SimBrief ID:{' '}
                             <input
                                 value={simbriefTextbox}
-                                onChange={(e) =>
-                                    setSimbriefTextbox(e.target.value)
-                                }
+                                onChange={(e) => {
+                                    setSimbriefTextbox(e.target.value);
+                                    localStorage.setItem(
+                                        'simbriefTextbox',
+                                        e.target.value
+                                    );
+                                }}
                                 type="text"
-                                name="simbrief-id"
                                 id="simbrief-id-box"
                                 className="card-input-box"
                             />
