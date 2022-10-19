@@ -2,6 +2,9 @@ import React from 'react';
 import './aviation.css';
 import b737ngQrh from '../files/b737ng-qrh.pdf';
 import b737ngChecklist from '../files/b737ng-checklist.pdf';
+import { useState } from 'react';
+
+const [simbriefTextbox, setSimbriefTextbox] = useState('');
 
 async function redirectFlightPlan() {
     try {
@@ -39,6 +42,10 @@ function Aviation() {
                         <p>
                             SimBrief ID:{' '}
                             <input
+                                value={simbriefTextbox}
+                                onChange={(e) =>
+                                    setSimbriefTextbox(e.target.value)
+                                }
                                 type="text"
                                 name="simbrief-id"
                                 id="simbrief-id-box"
