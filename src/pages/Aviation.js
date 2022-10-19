@@ -1,10 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './aviation.css';
 import b737ngQrh from '../files/b737ng-qrh.pdf';
 import b737ngChecklist from '../files/b737ng-checklist.pdf';
-import { useState } from 'react';
-
-const [simbriefTextbox, setSimbriefTextbox] = useState('');
 
 async function redirectFlightPlan() {
     try {
@@ -33,6 +30,8 @@ async function redirectFlightPlan() {
 }
 
 function Aviation() {
+    const [simbriefTextbox, setSimbriefTextbox] = useState('');
+
     return (
         <div className="aviation">
             <div className="card flight-plan">
@@ -56,6 +55,7 @@ function Aviation() {
                     <button
                         className="card-button"
                         id="simbrief-button"
+                        type="submit"
                         onClick={redirectFlightPlan}
                     >
                         Get Flight Plan
