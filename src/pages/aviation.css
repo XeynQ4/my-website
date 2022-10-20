@@ -67,6 +67,11 @@
     padding-top: 0.5rem;
 }
 
+.card-input-and-text {
+    padding-top: 0.5rem;
+    white-space: nowrap;
+}
+
 @media only screen and (min-width: 768px) {
     .checklists {
         flex-direction: row;

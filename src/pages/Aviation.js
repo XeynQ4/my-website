@@ -45,7 +45,7 @@ function Aviation() {
             <div className="card flight-plan">
                 <h2 className="card-title">Flight Plan</h2>
                 <div className="class-text-container">
-                    <div className="card-text">
+                    <div className="card-input-and-text">
                         <p>
                             SimBrief ID:{' '}
                             <input
