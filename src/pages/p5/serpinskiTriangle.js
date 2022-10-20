@@ -1,12 +1,14 @@
 function sketch(p) {
-    let w = p.windowWidth;
-    let h = p.windowHeight;
+    let w = p.windowWidth - 60;
+    let h = p.windowHeight - 60;
+    let angle = 0;
     const iterCount = 100;
 
     let radius = w < h ? w / 2 - 20 : h / 2 - 20;
     const steps = 3;
     let anchors = [];
     let currentPoint;
+    const step = p.TWO_PI / steps;
 
     p.setup = function () {
         p.createCanvas(w, h);
@@ -14,19 +16,18 @@ function sketch(p) {
         p.translate(w / 2, h / 2);
         // circle(0, 0, radius);
 
-        const step = p.TWO_PI / steps;
-        let angle = -p.HALF_PI;
+        angle = -p.HALF_PI;
         for (let i = 0; i < steps; i++) {
             let x = radius * p.cos(angle);
             let y = radius * p.sin(angle);
             anchors[i] = p.createVector(x, y);
 
-            p.stroke('red');
-            p.strokeWeight(10);
-            p.point(x, y);
+            // p.stroke('red');
+            // p.strokeWeight(10);
+            // p.point(x, y);
 
-            p.strokeWeight(1);
-            p.stroke(0, 0, 0);
+            // p.strokeWeight(1);
+            // p.stroke(0, 0, 0);
 
             angle += step;
         }
@@ -67,9 +68,12 @@ function sketch(p) {
     };
 
     p.windowResized = function () {
-        w = p.windowWidth;
-        h = p.windowHeight;
+        w = p.windowWidth - 60;
+        h = p.windowHeight - 60;
         radius = w / 2 - 20 ? w <= h : h / 2 - 20;
+
+        angle = -p.HALF_PI;
+
         p.resizeCanvas(w, h);
     };
 }
