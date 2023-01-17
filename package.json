@@ -5,6 +5,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
         "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@fortawesome/free-brands-svg-icons": "^6.1.1",
         "@fortawesome/react-fontawesome": "^0.1.18",
         "@testing-library/jest-dom": "^5.16.4",
         "@testing-library/react": "^13.3.0",
@@ -16,8 +17,7 @@
         "react-helmet": "^6.1.0",
         "react-p5-wrapper": "^3.3.0",
         "react-router-dom": "^6.4.1",
-        "react-script-tag": "^1.1.2",
-        "react-scripts": "^2.1.8"
+        "react-scripts": "^5.0.1"
     },
     "scripts": {
         "start": "react-scripts start",

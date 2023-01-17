@@ -1,0 +1,61 @@
+.card-input-box {
+    width: 7.5rem;
+    height: 1em;
+    border-radius: 2rem;
+    border: #004e92 1px solid;
+    padding: 0.5rem;
+}
+
+.card-input-box:focus {
+    outline: none;
+}
+
+.card-button {
+    border-radius: 2rem;
+    border: #004e92 1px solid;
+    padding: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(208, 100%, 65%);
+}
+
+.card-button:hover {
+    background-color: hsl(208, 100%, 61%);
+}
+
+.card {
+    background: #46a2f2;
+    padding: 2.5rem;
+    border-radius: 3rem;
+}
+
+.card-title {
+    margin: 0;
+    text-align: center;
+}
+
+.card-text-container {
+    text-align: center;
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.card-text {
+    padding-top: 0rem;
+}
+
+.card-input-and-text {
+    text-align: center;
+}
+
+.card-main-title {
+    margin: 0;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}

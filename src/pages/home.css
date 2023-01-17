@@ -1,0 +1,15 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.home-intro {
+    margin: 6rem;
+}
+
+.contacts {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}

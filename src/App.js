@@ -5,6 +5,7 @@ import Layout from './Layout';
 import Home from './pages/Home';
 import SerpinskiTriangle from './pages/SerpinskiTriangle';
 import Aviation from './pages/Aviation';
+import './app.css';
 
 function App() {
     return (
