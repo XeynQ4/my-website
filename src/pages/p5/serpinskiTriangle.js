@@ -31,6 +31,7 @@ function sketch(p) {
 
             angle += step;
         }
+        p.stroke(205, 214, 244);
 
         let x = p.random(-radius, radius);
         let y = p.random(-radius, radius);
@@ -88,7 +89,7 @@ function sketch(p) {
             p.point(x, y);
 
             p.strokeWeight(1);
-            p.stroke(0, 0, 0);
+            p.stroke(205, 214, 244);
 
             angle += step;
         }

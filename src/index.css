@@ -3,11 +3,21 @@ html {
 }
 
 body {
+    --background-color: #1e1e2e;
+    --text-color: #313244;
+    --link-color: #313282;
+    --link-hover-color: #3739ff;
+    --card-background-color: #f38ba8;
+    --button-hover-color: #f37396;
+    --input-background-color: #f3bccb;
+    --card-border-color: #f34273;
+
     font-size: 1.6rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
         'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
         'Helvetica Neue', sans-serif;
-    background-color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
