@@ -24,6 +24,7 @@
     margin: 1rem 0 0 1rem;
     overflow: hidden;
     font-weight: 700;
+    color: var(--text-color);
 }
 
 .nav-item {
