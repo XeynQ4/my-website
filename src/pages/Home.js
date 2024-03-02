@@ -1,10 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faTwitter,
-    faGithub,
-    faDiscord
-} from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import BskyLogo from '../images/bsky-logo.js';
 import './home.css';
 
 function Home() {
@@ -36,9 +33,8 @@ function Home() {
                         </a>
                     </div>
                     <div className="card-text">
-                        <a href="https://discordapp.com/users/487235059275792385">
-                            <FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon>{' '}
-                            Discord
+                        <a href="https://bsky.app/profile/xeyn.me">
+                            <BskyLogo /> Bluesky
                         </a>
                     </div>
                     <div className="card-text">
