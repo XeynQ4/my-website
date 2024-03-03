@@ -36,6 +36,7 @@ function Home() {
                         <a href="https://bsky.app/profile/xeyn.me">
                             <BskyLogo /> Bluesky
                         </a>
+                        ;
                     </div>
                     <div className="card-text">
                         <a href="mailto:xeyn@xeyn.me">
