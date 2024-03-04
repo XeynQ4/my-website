@@ -40,7 +40,7 @@ function Home() {
                     <div className="card-text">
                         <a href="mailto:xeyn@xeyn.me">
                             <FontAwesomeIcon
-                                icon={faEnvelope};
+                                icon={faEnvelope}
                             ></FontAwesomeIcon>{' '}
                             Mail
                         </a>
