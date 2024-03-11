@@ -15,13 +15,19 @@ function Home() {
                         time. This website is made in react by me. I know
                         JavaScript, Java, Python and basics of C and Rust.
                     </p>
+                    <a
+                        className="card-text no-underline"
+                        href="https://en.pronouns.page/@Xeyn"
+                    >
+                        Any pronouns
+                    </a>
                 </div>
             </div>
             <div className="card contacts">
                 <h2 className="card-title">Contacts</h2>
                 <div className="card-text-container">
                     <div className="card-text">
-                        <a href="https://twitter.com/Xeyn_Q4">
+                        <a href="https://twitter.com/XeynQ4">
                             <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>{' '}
                             Twitter
                         </a>
