@@ -40,12 +40,15 @@
 .card-text-container {
     text-align: center;
     padding: 0;
-    padding-top: 1rem;
     margin: 0;
+    margin-top: 1.6rem;
 }
 
 .card-text {
     padding-top: 0rem;
+    display: block;
+    margin-top: 1.6rem;
+    margin-bottom: 0;
 }
 
 .card-input-and-text {
@@ -58,10 +61,14 @@
     font-size: 4rem;
 }
 
-.no-padding-top {
-    padding-top: 0;
+.no-margin-top {
+    margin-top: 0;
 }
 
 .no-underline {
     text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
 }

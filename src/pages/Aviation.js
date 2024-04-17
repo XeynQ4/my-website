@@ -44,7 +44,7 @@ function Aviation() {
         <div className="aviation">
             <div className="card flight-plan">
                 <h2 className="card-title">Flight Plan</h2>
-                <div className="card-text-container no-padding-top">
+                <div className="card-text-container">
                     <div className="card-input-and-text">
                         <p>
                             SimBrief ID:{' '}
@@ -77,10 +77,10 @@ function Aviation() {
                 <div className="card">
                     <h2 className="card-title">Boeing 737NG</h2>
                     <div className="card-text-container">
-                        <div className="card-text">
+                        <div className="card-text no-margin-top">
                             <a href={b737ngChecklist}>Checklist</a>
                         </div>
-                        <div className="card-text">
+                        <div className="card-text no-margin-top">
                             <a href={b737ngQrh}>QRH</a>
                         </div>
                     </div>
