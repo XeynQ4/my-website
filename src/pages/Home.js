@@ -66,7 +66,7 @@ function Home() {
                     <div className="card-text no-margin-top">
                         <a
                             className="no-underline"
-                            href="https://keys.openpgp.org/vks/v1/by-fingerprint/F6B84022F01263D53412640B0398A6CD0AAD551F"
+                            href="../files/Xeyn.key"
                         >
                             <FontAwesomeIcon icon={faLock}></FontAwesomeIcon>{' '}
                             <span className="underline">PGP key</span>
