@@ -64,10 +64,7 @@ function Home() {
                         </a>
                     </div>
                     <div className="card-text no-margin-top">
-                        <a
-                            className="no-underline"
-                            href="/Xeyn.key"
-                        >
+                        <a className="no-underline" href="/Xeyn.key">
                             <FontAwesomeIcon icon={faLock}></FontAwesomeIcon>{' '}
                             <span className="underline">PGP key</span>
                         </a>
